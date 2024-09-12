@@ -15,8 +15,9 @@ const Bookmarks = () => {
         <p>No jobs bookmarked yet.</p>
       ) : (
         bookmarks.map((job) => (
+          <h1 className=' flex items-center text-20px font-bold justify-contents-center'>MY BOOKMARKS</h1>
           <div key={job.id} style={styles.jobCard}>
-            <h1 className=' flex items-center text-20px font-bold justify-content-center'>MY BOOKMARKS</h1>
+            
             <h2>{job.title}</h2>
             <p><strong>Job Location:</strong> {job.job_location_slug}</p>
               <p><strong>Salary:</strong> {job.primary_details.Salary}</p>
