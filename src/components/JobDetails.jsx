@@ -50,8 +50,9 @@ const JobDetails = () => {
 
 
   return (
+ <h1 className=' flex items-center text-20px font-bold justify-contents-center'>Job Detail</h1>
     <div style={styles.container}>
-      <h1 className=' flex items-center text-20px font-bold justify-content-center'>Job Detail</h1>
+     
            <h2>{title}</h2>
               <p><strong>Company:</strong> {company_name}</p>
               <p><strong>Job Location:</strong> {job_location_slug}</p>
