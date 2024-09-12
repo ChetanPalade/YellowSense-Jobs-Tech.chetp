@@ -69,6 +69,7 @@ const Jobs = () => {
  
   
   return (
+     <h1 className=' flex items-center text-20px font-bold justify-content-center'>Jobs List</h1>
     <div  style={styles.container}>
       <div style={styles.pagination}>
         <button
@@ -91,8 +92,9 @@ const Jobs = () => {
       </div>
       
         {job.map((job) => (
+      
       <div key={job.id} style={styles.jobCard}>
-        <h1 className=' flex items-center text-20px font-bold justify-content-center'>Jobs List</h1>
+       
         <h2>{job.title}</h2>
            <p><strong>Company Name:</strong> {job.company_name}</p>
            <p><strong>Job Location:</strong> {job.job_location_slug}</p>
