@@ -47,7 +47,7 @@ const Jobs = () => {
     fetchAllJobs();
   }, [page,id]);
 
-  if (loading) return <p style={{textAlign:"center"}}>Loading jobs...</p>;
+  if (loading) return <p style={{textAlign:"center",font:'bold'}}>Loading jobs...</p>;
   
   if (error) return <p>{error}</p>;
 
@@ -69,8 +69,9 @@ const Jobs = () => {
  
   
   return (
-     <h1 className=' flex items-center text-20px font-bold justify-content-center'>Jobs List</h1>
+    
     <div  style={styles.container}>
+       <h1 style={{textAlign:'center',text: "20px" ,font: "bold", textDecoration:"underline",}}>JobsList</h1>
       <div style={styles.pagination}>
         <button
           onClick={() => setPage(page - 1)}
