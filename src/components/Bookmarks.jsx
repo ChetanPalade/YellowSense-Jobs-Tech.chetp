@@ -11,11 +11,12 @@ const Bookmarks = () => {
 
   return (
     <div style={styles.container}>
+      <h1 style={{textAlign:'center',text: "20px" ,font: "bold", textDecoration:"underline",}}>MY BOOKMARKS</h1>
       {bookmarks.length === 0 ? (
         <p>No jobs bookmarked yet.</p>
       ) : (
         bookmarks.map((job) => (
-          <h1 style={{textAlign:'center',text: "20px" ,font: "bold", textDecoration:"underline",}}>MY BOOKMARKS</h1>
+          
           <div key={job.id} style={styles.jobCard}>
             
             <h2>{job.title}</h2>
