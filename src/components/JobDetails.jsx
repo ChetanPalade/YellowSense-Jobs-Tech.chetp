@@ -34,7 +34,7 @@ const JobDetails = () => {
   //   }
   // })
  
-  if (loading) return <p style={{textAlign:"center0",fontSize:"bold"}}>Loading job details...</p>;
+  if (loading) return <p style={{textAlign:"center0",font:"bold"}}>Loading job details...</p>;
   if (error) return <p>{error}</p>;
 
   if (!job) {
@@ -50,9 +50,9 @@ const JobDetails = () => {
 
 
   return (
- <h1 className=' flex items-center text-20px font-bold justify-contents-center'>Job Detail</h1>
+
     <div style={styles.container}>
-     
+     <h1 style={{textAlign:'center',text: "20px" ,font: "bold", textDecoration:"underline",}}>Job Details</h1>
            <h2>{title}</h2>
               <p><strong>Company:</strong> {company_name}</p>
               <p><strong>Job Location:</strong> {job_location_slug}</p>
